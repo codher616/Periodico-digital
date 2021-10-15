@@ -5,7 +5,7 @@ body {
     "main"
     "footer"
     ;
-    grid-template-rows: 15vh 1000vh 10vh;
+    grid-template-rows: 15vh 1fr 10vh;
     background-image: url("../images/bg.jpg");
     background-size: cover;
     background-repeat: repeat;
@@ -69,7 +69,30 @@ body {
 
 .main {
     grid-area: main;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
 }
+
+.main__sections-container {
+	width: 80vw;
+	border: 5px solid #fff;
+	margin: 5vh 0;
+	display: grid;
+	grid-template-rows: repeat(3, 20vh);
+	grid-template-columns: repeat(2, 50%);
+}
+
+.main__sections {
+	border: 2px solid #fff;
+	margin: 5px 5px;
+}
+
+.main:sections:hover {
+	opacity: 0.5;
+}
+
 
 .footer {
     grid-area: footer;
