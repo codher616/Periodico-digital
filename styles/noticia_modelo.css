@@ -87,11 +87,30 @@ body {
 	width: 80vw;
 	margin: 2vh 0;
 	display: grid;
-	grid-template-areas:
-	"h h h"
-	"p p img img"
-	"p p p p";
-	grid-template-rows: 10vh 1fr 1fr;
+	grid-template-rows: 10vh 40vh 1fr;
+    grid-template-columns: 1fr;
+}
+
+.main__h2 {
+    font-size: 48px;
+    color: #fff;
+    justify-self: center;
+    font-family: sans-serif;
+}
+
+.main__p {
+    margin: 10px 0 0 0;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 26px;
+}
+
+.main__img-container {
+    overflow: auto;
+}
+
+.main__img {
+    object-fit: contain;
 }
 
 .footer {
