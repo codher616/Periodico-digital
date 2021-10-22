@@ -106,11 +106,16 @@ body {
 }
 
 .main__img-container {
-    overflow: auto;
+    overflow: hidden;
+	justify-self: center;
+	display: flex;
 }
 
 .main__img {
-    object-fit: contain;
+    object-fit: cover;
+	justify-self: center;
+	width: 80vw;
+	
 }
 
 .footer {
