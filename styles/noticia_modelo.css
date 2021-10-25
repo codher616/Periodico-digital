@@ -117,13 +117,20 @@ body {
 	width: 80vw;
 	margin: 6vh 0;
 	display: grid;
-	grid-template-rows: 10vh 40vh 1fr ;
+	grid-template-rows: 10vh 10vh 40vh 1fr ;
     grid-template-columns: 1fr;
 }
 
 .main__h2 {
     font-size: 48px;
     color: #fff;
+    justify-self: center;
+    font-family: sans-serif;
+}
+
+.main__h3 {
+    font-size: 36px;
+    color: #fffC;
     justify-self: center;
     font-family: sans-serif;
 }
