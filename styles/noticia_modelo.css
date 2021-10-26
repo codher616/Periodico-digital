@@ -126,6 +126,7 @@ body {
     color: #fff;
     justify-self: center;
     font-family: sans-serif;
+	text-align:  center;
 }
 
 .main__h3 {
@@ -133,6 +134,7 @@ body {
     color: #fffC;
     justify-self: center;
     font-family: sans-serif;
+	text-align: center;
 }
 
 .main__p {
