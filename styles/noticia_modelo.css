@@ -162,6 +162,12 @@ body {
 	width: 80vw;
 }
 
+.main__qrs-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
 .main__qr-container {
     margin-top: 10px;
     justify-self: center;
