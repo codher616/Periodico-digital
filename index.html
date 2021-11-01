@@ -1,15 +1,13 @@
-CAMBIAR EL TIPO DE LETRA Y CREAR MENÚ CON NOTICIAS
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Periódico digital</title>
-        <link rel="icon" href="#">
+        <title>El día a día</title>
+        <link rel="icon" href="images/bg.jpg">
         <link rel="stylesheet" type="text/css" href="styles/index.css">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <meta charset utf-8>
         <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>    
     </head>
@@ -17,7 +15,7 @@ CAMBIAR EL TIPO DE LETRA Y CREAR MENÚ CON NOTICIAS
     <body>
         <header class="header">
             <div class="header__container-h1">
-                <h1 class="header__h1">Periódico Digital</h1>
+                <h1 class="header__h1"><a class="header__a" href="#">El día a día</a></h1>
             </div>
             <nav class="nav">
                 <ul class="nav__container-items">
@@ -27,46 +25,46 @@ CAMBIAR EL TIPO DE LETRA Y CREAR MENÚ CON NOTICIAS
                             <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
                         </ul>
                     </li>
-                    <li class="nav__items"><a class="nav__a" href="#">Política</a>
-                        <ul class="nav__sub-list">
-                            <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
-                            <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__items"><a class="nav__a" href="#">Economía</a>
-                    <ul class="nav__sub-list">
-                            <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
-                            <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
-                        </ul>
-                    </li>
+
                     <li class="nav__items"><a class="nav__a" href="#">Sucesos</a>
                     <ul class="nav__sub-list">
-                            <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
+                            <li class="nav__sub-items"><a class="nav__a" href="sucesos/Sucesos1.html">Ataque informático a gran escala</a></li>
                             <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
                         </ul>
                     </li>
+                    
+                    <li class="nav__items"><a class="nav__a" href="#">Sanidad</a>
+                        <ul class="nav__sub-list">
+                            <li class="nav__sub-items"><a class="nav__a" href="sanidad/Sanidad1.html">Nuevos "superhumanos"</a></li>
+                            <li class="nav__sub-items"><a class="nav__a" href="sanidad/Sanidad2.html">Premio nobel de medicina</a></li>
+                        </ul>
+                    </li>
+                  
                     <li class="nav__items"><a class="nav__a" href="#">Tecnología</a>
                     <ul class="nav__sub-list">
-                            <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
-                            <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
+                            <li class="nav__sub-items"><a class="nav__a" href="tecnologia/Tecnologia1.html">Gafas que ven el mundo en 3D</a></li>
+                            <li class="nav__sub-items"><a class="nav__a" href="tecnologia/Tecnologia2.html">Espacio artificial para la agricultura</a></li>
                         </ul>
                     </li>
+
                     <li class="nav__items"><a class="nav__a" href="#">Deportes</a>
                     <ul class="nav__sub-list">
                             <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
                             <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
                         </ul>
                     </li>
+
                     <li class="nav__items"><a class="nav__a" href="#">Educación</a>
                     <ul class="nav__sub-list">
                             <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
                             <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
                         </ul>
                     </li>
+                    
                     <li class="nav__items"><a class="nav__a" href="#">Metereología</a>
                     <ul class="nav__sub-list">
-                            <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
-                            <li class="nav__sub-items"><a class="nav__a" href="#">Sociedad</a></li>
+                            <li class="nav__sub-items"><a class="nav__a" href="metereologia/Metereologia1.html">Nueva sequía</a></li>
+                            <li class="nav__sub-items"><a class="nav__a" href="metereologia/Metereologia2.html">Huracán en Sudáfrica</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -76,9 +74,17 @@ CAMBIAR EL TIPO DE LETRA Y CREAR MENÚ CON NOTICIAS
         <main class="main">
 		<div class="main__sections-container">
 			<div class="main__sections">
-                <a class="main__sections-a" href="">
-                    <h4 class="main__sections-h4">Titular noticia portada</h4>
-                    <img src="https://www.elindependiente.com/wp-content/uploads/2017/11/iStock-837834650-980x550.jpg" alt="imagen-noticia" class="main__sections-images">
+                <a class="main__sections-a" href="sucesos/Sucesos1.html">
+                    <h4 class="main__sections-h4">Ataque informático a gran escala</h4>
+                    <img src="images/Sucesos1.jpg" alt="imagen-noticia" class="main__sections-images">
+			<p class="main__sections-p">18 / 10 / 2071</p>
+                </a>
+			</div>
+
+			<div class="main__sections">
+                <a class="main__sections-a" href="tecnologia/Tecnologia1.html">
+                    <h4 class="main__sections-h4">Gafas que ven el mundo en 3D</h4>
+                    <img src="images/Tecnologia1.jpg" alt="imagen-noticia" class="main__sections-images">
 			<p class="main__sections-p">18 / 10 / 2071</p>
                 </a>
 			</div>
@@ -92,15 +98,7 @@ CAMBIAR EL TIPO DE LETRA Y CREAR MENÚ CON NOTICIAS
 			</div>
 
 			<div class="main__sections">
-                <a class="main__sections-a" href="#">
-                    <h4 class="main__sections-h4">Titular noticia portada</h4>
-                    <img src="images/bg.jpg" alt="imagen-noticia" class="main__sections-images">
-			<p class="main__sections-p">18 / 10 / 2071</p>
-                </a>
-			</div>
-
-			<div class="main__sections">
-                <a class="main__sections-a" href="">
+                <a class="main__sections-a" href="@">
                     <h4 class="main__sections-h4">Titular noticia portada</h4>
                     <img src="https://www.elindependiente.com/wp-content/uploads/2017/11/iStock-837834650-980x550.jpg" alt="imagen-noticia" class="main__sections-images">
 			<p class="main__sections-p">18 / 10 / 2071</p>
@@ -108,17 +106,17 @@ CAMBIAR EL TIPO DE LETRA Y CREAR MENÚ CON NOTICIAS
 			</div>
 
 			<div class="main__sections">
-                <a class="main__sections-a" href="">
-                    <h4 class="main__sections-h4">Titular noticia portada</h4>
-                    <img src="https://www.elindependiente.com/wp-content/uploads/2017/11/iStock-837834650-980x550.jpg" alt="imagen-noticia" class="main__sections-images">
+                <a class="main__sections-a" href="sanidad/Sanidad2.html">
+                    <h4 class="main__sections-h4">Premio nobel de medicina</h4>
+                    <img src="images/Sanidad2.jpg" alt="imagen-noticia" class="main__sections-images">
 			<p class="main__sections-p">18 / 10 / 2071</p>
                 </a>
 			</div>
 
 			<div class="main__sections">
-                <a class="main__sections-a" href="#">
-                    <h4 class="main__sections-h4">Titular noticia portada</h4>
-                    <img src="images/bg.jpg" alt="imagen-noticia" class="main__sections-images">
+                <a class="main__sections-a" href="metereologia/Metereologia1.html">
+                    <h4 class="main__sections-h4">Nueva sequía en la Comunidad Valenciana</h4>
+                    <img src="images/Metereologia1.jpg" alt="imagen-noticia" class="main__sections-images">
 			<p class="main__sections-p">18 / 10 / 2071</p>
                 </a>
 			</div>
