@@ -6,6 +6,7 @@ body {
     "footer"
     ;
     grid-template-rows: 20vh 1fr 1vh;
+    overflow-x: hidden;
     background-image: url("../images/bg.jpg");
     background-size: cover;
     background-repeat: repeat;
@@ -151,6 +152,7 @@ body {
 }
 
 .main__img-container {
+    margin-top: 20px;
     overflow: hidden;
 	justify-self: center;
 	display: flex;
@@ -193,4 +195,19 @@ body {
 
 .footer {
     grid-area: footer;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .nav__sub-items {
+        font-size: 17px;
+    }
+
+    .nav__sub-list {
+        width: 20vw;
+    }
+
+    .nav__sections-h4 {
+        font-size: 28px;
+    }
 }

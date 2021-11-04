@@ -5,6 +5,8 @@ body {
     "main"
     "footer"
     ;
+
+    overflow-x: hidden;
     grid-template-rows: 20vh 1fr 1vh;
     background-image: url("../images/bg.jpg");
     background-size: cover;
@@ -107,6 +109,10 @@ body {
     font-family: sans-serif;
     color: #fff;
     background-color: #fff2;
+
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
 }
 
 .main {
@@ -129,7 +135,7 @@ body {
 	width: 80vw;
 	margin: 4vh 0;
 	display: grid;
-	grid-template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 40vh);
 	grid-template-columns: repeat(2, 50%);
 }
 
@@ -150,11 +156,9 @@ body {
 }
 
 .main__sections-a {
-    height: 100%;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10vh 20vh 4vh;
+    grid-template-rows: 5vh 20vh 4vh;
     overflow: hidden;
     justify-items: center;
     align-items: center;
@@ -171,11 +175,16 @@ body {
     font-family: sans-serif;
     color: #fff;
     text-align: center;
+    padding: 35px 0 0 0;
 }
 
-.main__sections-images {
+.main__sections-img-container {
+    overflow: hidden;
+    height: 40vh;
     z-index: -1;
-    padding: 5px 10px 5px 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 
 .main__sections-p {
@@ -188,4 +197,18 @@ body {
 
 .footer {
     grid-area: footer;
+}
+
+@media screen and (max-width: 1400px) {
+    .nav__sub-items {
+        font-size: 16px;
+    }
+
+    .nav__sub-list {
+        width: 20vw;
+    }
+
+    .nav__sections-h4 {
+        font-size: 28px;
+    }
 }
